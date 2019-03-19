@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div class="smiley">:)</div>
+		<div class="text-main">
+			Your PC didn't ran into a problem (yet) and probably doesn't need to restart.
+			We are constantly collecting info for our marketing department.
+			Please provide your stop code as it will help you track the unstability of your system.
+		</div>
+		<div id="text-percentage">0% complete</div>
+		<div id="stopcode">
+			<input type="text" id="stopcode-input" placeholder="Enter Stop Code name" autofocus />
+			<button class="stopcode-save" onclick="main.save()">Save</button>
+		</div>
+		<div id="stopcode-message"></div>
+		<div class="list-of-stopcodes">
+			If you would like to see all stop codes your system has produces so far, please <a href="#" onclick="main.toggleList()">click here</a>
+		</div>
+		<div id="all-codes"></div>
+		<script src="./awesomplete.min.js"></script>
+		<script src="./codes.js"></script>
+		<script src="./index.js"></script>
+	</body>
+</html>

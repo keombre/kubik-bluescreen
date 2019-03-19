@@ -1,0 +1,35 @@
+{
+  "name": "kubik-bluescreen",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "Bluescreen Counter for Zahraj16",
+  "dependencies": {
+    "electron-json-storage": "4.0.2",
+    "mousetrap": "1.6.1"
+  },
+  "devDependencies": {
+    "electron-builder": "20.2.0",
+    "electron": "1.8.2"
+  },
+  "scripts": {
+    "build": "electron-builder",
+    "pack": "electron-builder --dir",
+    "start": "electron ."
+  },
+  "author": "Keombre <keombre8@gmail.com>",
+  "license": "MIT",
+  "build": {
+    "appId": "cz.keombre.kubik-bluescreen",
+    "win": {
+      "target": "portable",
+      "icon": "dist/main.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "dist/main.png"
+    },
+    "appImage": {
+      "systemIntegration": "doNotAsk"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('fonts/segoeui.ttf') font-weight-normal,
+         url('fonts/segoeuib.ttf') font-weight-bold,
+         url('fonts/segoeuii.ttf') font-weight-italic,
+         url('fonts/segoeuil.ttf') font-weight-light;
+}
+
+body {
+    user-select: none;
+    overflow: hidden;
+    cursor: default;
+    background: #0079d8;
+    color: #fff;
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+    margin-left: 135px;
+    margin-top: 80px;
+    width: 800px;
+}
+.smiley {
+    font-size: 125pt;
+    margin-bottom: 7px;
+}
+.text-main {
+    font-size: 24pt;
+    line-height: 35pt;
+    margin-bottom: 25px;
+}
+#text-percentage {
+    font-size: 25pt;
+    margin-bottom: 40px;
+}
+#stopcode-input {
+    border: none;
+    padding: 6px;
+    text-indent: 4px;
+    outline: none;
+    width: 250px;
+}
+.stopcode-save {
+    outline: none;
+    background: #3949AB;
+    border: none;
+    padding: 6px 15px;
+    color: #fff;
+    margin-left: 6px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 270px;
+}
+.stopcode-save:hover {
+    outline: 3px solid #fff;
+}
+button.stopcode-save:active {
+    background: #283480;
+}
+#stopcode {
+    margin-bottom: 20px;
+    position: relative;
+}
+a {
+    -webkit-user-drag: none;
+    color: #fff;
+}
+ul[role="listbox"] {
+    list-style: none;
+    padding-left: 0;
+}
+span[role="status"] {
+    display: none;
+}
+.list-of-stopcodes {
+    margin-top: 50px;
+}
+#all-codes {
+    position: absolute;
+    right: 150px;
+    list-style: none;
+    top: 100px;
+}
+.all-codes-title {
+    font-size: 21pt;
+    width: 300px;
+}
