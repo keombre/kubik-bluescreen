@@ -1,7 +1,6 @@
 'use strict'
 const storage = require('electron-json-storage')
 
-const Mousetrap = require('mousetrap')
 const BrowserWindow = require('electron').remote.getCurrentWindow()
 
 const main = new class {
@@ -12,10 +11,6 @@ const main = new class {
         this.openList = false
 
         this.timer()
-
-        this.container = {
-            mousetrap: Mousetrap
-        }
 
         this.input = document.getElementById("stopcode-input");
         new Awesomplete(this.input, {
